@@ -1,0 +1,233 @@
+.section {
+  background: var(--bg);
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.headerAlign {
+  text-align: center;
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--black);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 4px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 0.9;
+  color: var(--navy);
+  margin-bottom: 64px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.card {
+  background: var(--white);
+  border: var(--border);
+  box-shadow: var(--shadow-md);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 var(--navy);
+}
+
+.cardPopular {
+  background: var(--navy);
+  color: var(--white);
+  border: 3px solid var(--orange);
+  box-shadow: 8px 8px 0 var(--orange);
+  transform: scale(1.05);
+  z-index: 10;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardPopular:hover {
+  transform: scale(1.05) translate(-4px, -4px);
+  box-shadow: 12px 12px 0 var(--orange);
+}
+
+.badge {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #666;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 12px;
+}
+
+.badgePopTxt {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 12px;
+}
+
+.badgePopular {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  background: var(--orange);
+  color: var(--black);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  transform: rotate(-2deg);
+  border: var(--border);
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.pricePop {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--orange);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 32px;
+}
+
+.subtitlePop {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 32px;
+}
+
+.featuresList {
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.featuresList li {
+  margin-bottom: 12px;
+}
+
+.featuresListPop {
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--white);
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.featuresListPop li {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.checkPop {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.btnBuy {
+  background: var(--orange);
+  color: var(--black);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 16px;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  width: 100%;
+}
+
+.btnBuy:hover {
+  box-shadow: 0 0 0 var(--black);
+  transform: translate(3px, 3px);
+}
+
+.includedStrip {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.incItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+}
+
+.incIcon {
+  color: var(--orange);
+}
+
+@media (max-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .cardPopular {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .cardGrid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 24px;
+  }
+  .card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+  }
+  .includedStrip {
+    gap: 30px;
+  }
+}

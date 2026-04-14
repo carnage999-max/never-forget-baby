@@ -1,0 +1,210 @@
+.section {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.layout {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.leftCol {
+  flex: 0 0 60%;
+}
+
+.rightCol {
+  flex: 0 0 40%;
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--orange);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 4px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 0.9;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 40px;
+}
+
+.list {
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 48px;
+}
+
+.list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bullet {
+  margin-top: 6px;
+  width: 8px;
+  height: 8px;
+  background: var(--orange);
+  flex-shrink: 0;
+}
+
+.statsRow {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 48px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.statNum {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--orange);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.statDesc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.supportersTitle {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.supportersGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.supporterBadge {
+  background: rgba(255,255,255,0.08);
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 4px 4px 0 var(--orange);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sIcon {
+  color: var(--orange);
+  flex-shrink: 0;
+}
+
+.sInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.sInfo strong {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: normal;
+}
+
+.sInfo span {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.3;
+  margin-top: 4px;
+}
+
+.proposalCard {
+  background: var(--white);
+  border: var(--border);
+  box-shadow: var(--shadow-lg);
+  color: var(--black);
+}
+
+.cardHeader {
+  height: 24px;
+  background: var(--navy);
+  border-bottom: var(--border);
+}
+
+.cardBody {
+  padding: 40px;
+  text-align: center;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.cardSub {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.supportBtn {
+  background: var(--orange);
+  color: var(--black);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 16px 24px;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  width: 100%;
+}
+
+.supportBtn:hover {
+  box-shadow: 0 0 0 var(--black);
+  transform: translate(3px, 3px);
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .supportersGrid {
+    grid-template-columns: 1fr;
+  }
+  .statsRow {
+    flex-direction: column;
+  }
+}

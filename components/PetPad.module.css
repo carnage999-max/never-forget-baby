@@ -1,0 +1,154 @@
+.section {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.leftCol {
+  flex: 1;
+}
+
+.rightCol {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--black);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  padding: 6px 16px;
+  border: var(--border);
+  transform: rotate(-2deg);
+  margin-bottom: 32px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(52px, 8vw, 100px);
+  line-height: 0.9;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 48px;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 24px;
+}
+
+.featureItem {
+  display: flex;
+  gap: 16px;
+}
+
+.featureIcon {
+  color: var(--orange);
+  flex-shrink: 0;
+}
+
+.featureTextWrap {
+  border-left: 3px solid var(--orange);
+  padding-left: 12px;
+}
+
+.featureTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.featureDesc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.4;
+}
+
+.imageWrap {
+  width: 100%;
+  border: 3px solid var(--orange);
+  box-shadow: 8px 8px 0 var(--orange);
+}
+
+.stepsStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  background: rgba(0,0,0,0.2);
+  padding: 40px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+}
+
+.stepNum {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--orange);
+  line-height: 0.8;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.stepDesc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .imageWrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .stepsStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .stepsStrip {
+    grid-template-columns: 1fr;
+  }
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,186 @@
+.section {
+  background: var(--white);
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--black);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 4px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 0.9;
+  color: var(--navy);
+  margin-bottom: 64px;
+}
+
+.stepsGrid {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.stepCard {
+  flex: 1;
+  background: var(--bg);
+  border: var(--border);
+  box-shadow: var(--shadow-md);
+  padding: 28px 24px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stepCard:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 var(--navy);
+}
+
+.stepNum {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: var(--font-display);
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--navy);
+  opacity: 0.15;
+}
+
+.icon {
+  color: var(--orange);
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.stepBody {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.arrow {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 40px;
+}
+
+.line {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--orange);
+  z-index: 0;
+}
+
+.milestones {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  background: var(--white);
+  padding: 0 10px;
+}
+
+.badge {
+  background: var(--navy);
+  color: var(--white);
+  border: var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 4px 16px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.milestoneText {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #444;
+}
+
+@media (max-width: 1024px) {
+  .stepsGrid {
+    flex-direction: column;
+  }
+  
+  .stepCard {
+    width: 100%;
+  }
+  
+  .arrow {
+    transform: rotate(90deg);
+  }
+  
+  .line {
+    top: 0;
+    bottom: 0;
+    left: 14px;
+    height: auto;
+    width: 4px;
+  }
+  
+  .milestones {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .milestone {
+    width: 100%;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .badge {
+    margin-bottom: 0;
+  }
+}

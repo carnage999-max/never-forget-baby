@@ -1,0 +1,142 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.scrolled {
+  background: var(--navy);
+  box-shadow: 0 2px 0 var(--orange);
+  padding: 12px 0;
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  display: block;
+  border-radius: 16px;
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 1;
+}
+
+/* On transparent specific sections we might want white links */
+.link {
+  font-family: var(--font-body);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--white); /* White in hero */
+  margin-right: 24px;
+  transition: color 0.2s;
+}
+
+/* Scrolled state handles the background so white is fine */
+.navbar[data-scrolled="true"] .link {
+  color: var(--white);
+}
+
+.navbar:not([data-scrolled="true"]) .link {
+  color: var(--white);
+}
+
+.link:hover {
+  color: var(--orange);
+}
+
+.btnBuy {
+  background: var(--orange);
+  color: var(--black);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 8px 20px;
+  font-family: var(--font-body);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.1s ease;
+}
+
+.btnBuy:hover {
+  box-shadow: 0 0 0 var(--black);
+  transform: translate(3px, 3px);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburgerLine {
+  width: 24px;
+  height: 2px;
+  background-color: var(--white);
+  transition: all 0.3s;
+}
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .linksContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--navy);
+    flex-direction: column;
+    padding: 24px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-bottom: 2px solid var(--orange);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease-out;
+  }
+
+  .mobileOpen {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .link {
+    margin: 12px 0;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,109 @@
+.footer {
+  background: #0A0A0A;
+  color: var(--white);
+  padding: 80px 0 0 0;
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.logoIcon {
+  display: block;
+  border-radius: 16px;
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 1;
+}
+
+.tagline {
+  font-family: var(--font-body);
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
+}
+
+.colTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links a {
+  color: rgba(255,255,255,0.6);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: var(--orange);
+}
+
+.bottomBar {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.copyright {
+  color: rgba(255,255,255,0.5);
+}
+
+.madeWith {
+  color: var(--orange);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .bottomBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
