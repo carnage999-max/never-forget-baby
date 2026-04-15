@@ -20,7 +20,7 @@ export default function Pricing() {
           <div className={`${styles.card} is-visible-target delay-100 ${isInView ? 'is-visible' : ''}`}>
             <div className={styles.badge}>INDIVIDUAL</div>
             <div className={styles.price}>$299</div>
-            <p className={styles.subtitle}>Complete NeverForget™ system for one vehicle</p>
+            <p className={styles.subtitle}>Complete NeverForgetBaby™ system for one vehicle</p>
             <ul className={styles.featuresList}>
               <li>✓ Pressure pad sensor</li>
               <li>✓ Mobile app access (iOS & Android)</li>

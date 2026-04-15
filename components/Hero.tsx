@@ -53,7 +53,7 @@ export default function Hero() {
           <div className={styles.logoWrapper}>
             <Image 
               src="/images/logo.png" 
-              alt="NeverForget™ Logo" 
+              alt="NeverForgetBaby™ Logo" 
               width={600} 
               height={600} 
               style={{ objectFit: 'contain', width: '100%', height: 'auto', filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.5))', borderRadius: '24px' }}  

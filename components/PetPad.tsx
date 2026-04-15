@@ -92,7 +92,7 @@ export default function PetPad() {
             <span className={styles.stepNum}>1</span>
             <div className={styles.stepWrap}>
               <h4 className={styles.stepTitle}>Place & Connect</h4>
-              <p className={styles.stepDesc}>Place the Pet Pad where your pet normally sits. Connect via Bluetooth to the NeverForget™ app.</p>
+              <p className={styles.stepDesc}>Place the Pet Pad where your pet normally sits. Connect via Bluetooth to the NeverForgetBaby™ app.</p>
             </div>
           </div>
           <div className={styles.step}>

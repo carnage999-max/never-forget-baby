@@ -49,8 +49,8 @@ export default function FAQ() {
           <div className={`${styles.column} is-visible-target delay-100 ${isInView ? 'is-visible' : ''}`}>
             <h3 className={styles.catTitle}>General</h3>
             <FAQItem 
-              question="How does NeverForget™ work?" 
-              answer="NeverForget™ consists of a pressure-sensitive pad placed under your child's car seat, connected to a mobile app via Bluetooth and cellular networks. When the pad detects weight and you subsequently leave the vehicle, the system triggers an escalating alert sequence. If you don't respond within 5 minutes, emergency services are automatically dispatched to your GPS coordinates."
+              question="How does NeverForgetBaby™ work?" 
+              answer="NeverForgetBaby™ consists of a pressure-sensitive pad placed under your child's car seat, connected to a mobile app via Bluetooth and cellular networks. When the pad detects weight and you subsequently leave the vehicle, the system triggers an escalating alert sequence. If you don't respond within 5 minutes, emergency services are automatically dispatched to your GPS coordinates."
             />
             <FAQItem 
               question="Is NeverForget™ compatible with all car seats?" 

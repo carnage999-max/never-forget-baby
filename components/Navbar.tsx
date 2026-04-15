@@ -29,8 +29,8 @@ export default function Navbar() {
       <div className={styles.container}>
         <div className={styles.logoContainer}>
           <Link href="#home" className={styles.logoWrap}>
-            <Image src="/icon.png" alt="NeverForget™ Icon" width={64} height={64} className={styles.logoIcon} />
-            <span className={styles.logoText}>NEVERFORGET™</span>
+            <Image src="/icon.png" alt="NeverForgetBaby™ Icon" width={64} height={64} className={styles.logoIcon} />
+            <span className={styles.logoText}>NEVERFORGETBABY™</span>
           </Link>
         </div>
 

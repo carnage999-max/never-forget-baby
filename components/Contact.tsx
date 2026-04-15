@@ -38,7 +38,7 @@ export default function Contact() {
               </div>
               <div className={styles.contactItem}>
                 <Mail size={24} className={styles.icon} />
-                <span>info@neverforget.com</span>
+                <span>info@neverforgetbaby.com</span>
               </div>
               <div className={styles.contactItem}>
                 <MapPin size={24} className={styles.icon} />

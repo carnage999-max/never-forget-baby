@@ -10,8 +10,8 @@ export default function Footer() {
           {/* Column 1 */}
           <div className={styles.col}>
             <div className={styles.logoWrap}>
-              <Image src="/icon.png" alt="NeverForget™ Icon" width={64} height={64} className={styles.logoIcon} />
-              <span className={styles.logoText}>NEVERFORGET™</span>
+              <Image src="/icon.png" alt="NeverForgetBaby™ Icon" width={64} height={64} className={styles.logoIcon} />
+              <span className={styles.logoText}>NEVERFORGETBABY™</span>
             </div>
             <p className={styles.tagline}>Saving Lives Through Technology</p>
           </div>
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottomBar}>
-          <div className={styles.copyright}>© 2026 NeverForget™. All rights reserved.</div>
+          <div className={styles.copyright}>© 2026 NeverForgetBaby™. All rights reserved.</div>
           <div className={styles.madeWith}>Made with purpose. Every life matters.</div>
         </div>
       </div>
