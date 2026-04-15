@@ -90,6 +90,19 @@
   z-index: 1;
 }
 
+.imageWrap {
+  margin-top: auto; /* keeps it at bottom */
+  padding-top: 24px;
+  width: 100%;
+}
+
+.stepImg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--navy);
+}
+
 .arrow {
   color: var(--orange);
   font-size: 2rem;

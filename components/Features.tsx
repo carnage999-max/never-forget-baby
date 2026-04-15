@@ -76,7 +76,7 @@ export default function Features() {
             <h4 className={styles.specTitle}>Connectivity</h4>
             <ul>
               <li>Bluetooth 5.0</li>
-              <li>4G LTE Cellular</li>
+              <li>Cellular Network</li>
               <li>5G + SAT</li>
               <li>GPS + GLONASS</li>
               <li>Wi-Fi 802.11 b/g/n</li>

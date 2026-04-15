@@ -68,8 +68,8 @@
 }
 
 .badge {
-  background: var(--orange);
-  color: var(--black);
+  background: var(--white);
+  color: var(--navy);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   padding: 6px 14px;

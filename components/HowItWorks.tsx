@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { Baby, Smartphone, AlertTriangle, Siren } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import styles from './HowItWorks.module.css';
@@ -39,6 +40,9 @@ export default function HowItWorks() {
             <p className={styles.stepBody}>
               When you exit the vehicle and move away, the system detects the separation and sends an immediate alert to your phone.
             </p>
+            <div className={styles.imageWrap}>
+              <Image src="/images/did-you-leave-your-child-in-car.png" alt="Did you leave your child in car alert" width={400} height={400} className={styles.stepImg} />
+            </div>
           </div>
           <div className={`${styles.arrow} is-visible-target delay-200 ${isInView ? 'is-visible' : ''}`}>→</div>
 
@@ -50,6 +54,9 @@ export default function HowItWorks() {
             <p className={styles.stepBody}>
               If you don't acknowledge the first alert within 2 minutes, the system escalates with louder alarms and repeated notifications.
             </p>
+            <div className={styles.imageWrap}>
+              <Image src="/images/i-think-you-forgot-your-baby-in-the-car-alert.png" alt="Second warning alert" width={400} height={400} className={styles.stepImg} />
+            </div>
           </div>
           <div className={`${styles.arrow} is-visible-target delay-300 ${isInView ? 'is-visible' : ''}`}>→</div>
 
@@ -61,6 +68,9 @@ export default function HowItWorks() {
             <p className={styles.stepBody}>
               After 5 minutes with no response, emergency services are automatically contacted with your exact GPS coordinates.
             </p>
+            <div className={styles.imageWrap}>
+              <Image src="/images/emergency-dispatch-alert-received-officer-taking-call.png" alt="Emergency dispatch" width={400} height={400} className={styles.stepImg} />
+            </div>
           </div>
         </div>
 

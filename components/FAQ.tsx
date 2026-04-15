@@ -50,7 +50,7 @@ export default function FAQ() {
             <h3 className={styles.catTitle}>General</h3>
             <FAQItem 
               question="How does NeverForget™ work?" 
-              answer="NeverForget™ consists of a pressure-sensitive pad placed under your child's car seat, connected to a mobile app via Bluetooth and 4G LTE. When the pad detects weight and you subsequently leave the vehicle, the system triggers an escalating alert sequence. If you don't respond within 5 minutes, emergency services are automatically dispatched to your GPS coordinates."
+              answer="NeverForget™ consists of a pressure-sensitive pad placed under your child's car seat, connected to a mobile app via Bluetooth and cellular networks. When the pad detects weight and you subsequently leave the vehicle, the system triggers an escalating alert sequence. If you don't respond within 5 minutes, emergency services are automatically dispatched to your GPS coordinates."
             />
             <FAQItem 
               question="Is NeverForget™ compatible with all car seats?" 
@@ -64,11 +64,11 @@ export default function FAQ() {
             <h3 className={styles.catTitle}>Technical</h3>
             <FAQItem 
               question="What if my phone battery dies?" 
-              answer="The NeverForget™ device operates independently with its own 72-hour battery backup. Emergency services can still be dispatched automatically even if your phone is dead, as the device communicates directly via 4G LTE."
+              answer="The NeverForget™ device operates independently with its own 72-hour battery backup. Emergency services can still be dispatched automatically even if your phone is dead, as the device communicates directly via cellular networks."
             />
             <FAQItem 
               question="Does this work without cellular service?" 
-              answer="The device uses Bluetooth, 4G LTE, 5G, satellite connectivity, and Wi-Fi. In areas with limited cellular coverage, satellite backup ensures the system remains operational."
+              answer="The device uses Bluetooth, 5G, satellite connectivity, and Wi-Fi. In areas with limited cellular coverage, satellite backup ensures the system remains operational."
             />
             <FAQItem 
               question="How long does the battery last?" 

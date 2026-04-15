@@ -23,9 +23,7 @@ export default function Hero() {
 
       <div className={styles.container}>
         <div className={styles.leftCol}>
-          <div className={`${styles.badge} ${mounted ? styles.animateUp : ''}`} style={{ transitionDelay: '100ms' }}>
-            ⚠ VEHICULAR HEATSTROKE KILLS 38+ CHILDREN EVERY YEAR
-          </div>
+
           
           <h1 className={`${styles.headline} ${mounted ? styles.animateUp : ''}`} style={{ transitionDelay: '200ms' }}>
             NEVER<br/>FORGET<span className={styles.tm}>™</span>
@@ -37,7 +35,7 @@ export default function Hero() {
           
           <div className={`${styles.ctaRow} ${mounted ? styles.animateUp : ''}`} style={{ transitionDelay: '400ms' }}>
             <Link href="#buy" className={`${styles.btnPrimary} btn`}>
-              ORDER NOW — $299
+              ORDER NOW
             </Link>
             <Link href="#how-it-works" className={`${styles.btnSecondary} btn`}>
               LEARN HOW IT WORKS ↓
