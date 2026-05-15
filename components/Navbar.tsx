@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`} data-scrolled={scrolled}>
       <div className={styles.container}>
         <div className={styles.logoContainer}>
-          <Link href="#home" className={styles.logoWrap}>
+          <Link href="/" className={styles.logoWrap}>
             <Image src="/icon.png" alt="NeverForgetBaby™ Icon" width={64} height={64} className={styles.logoIcon} />
             <span className={styles.logoText}>NEVERFORGETBABY™</span>
           </Link>
@@ -45,13 +45,13 @@ export default function Navbar() {
         </button>
 
         <div className={`${styles.linksContainer} ${mobileMenuOpen ? styles.mobileOpen : ''}`}>
-          <Link href="#how-it-works" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Product</Link>
-          <Link href="#features" className={styles.link} onClick={() => setMobileMenuOpen(false)}>How It Works</Link>
-          <Link href="#pet-pad" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Pet Pad</Link>
-          <Link href="#mission" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Our Mission</Link>
-          <Link href="#faq" className={styles.link} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
-          <Link href="#contact" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-          <Link href="#buy" className={`${styles.btnBuy} btn`} onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/#how-it-works" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Product</Link>
+          <Link href="/#features" className={styles.link} onClick={() => setMobileMenuOpen(false)}>How It Works</Link>
+          <Link href="/#pet-pad" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Pet Pad</Link>
+          <Link href="/#mission" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Our Mission</Link>
+          <Link href="/#faq" className={styles.link} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+          <Link href="/#contact" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+          <Link href="/#buy" className={`${styles.btnBuy} btn`} onClick={() => setMobileMenuOpen(false)}>
             Buy Now
           </Link>
         </div>

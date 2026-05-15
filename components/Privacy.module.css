@@ -1,0 +1,138 @@
+.privacyPage {
+  background-color: var(--bg);
+  min-height: 100vh;
+  padding-top: 120px; /* Navbar space */
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 60px 0 100px;
+}
+
+.header {
+  margin-bottom: 60px;
+  border-bottom: var(--border);
+  padding-bottom: 40px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--navy);
+}
+
+.effectiveDate {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background: var(--orange);
+  color: var(--white);
+  padding: 4px 12px;
+  display: inline-block;
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.content {
+  max-width: 800px;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.content h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  color: var(--navy);
+  border-left: 8px solid var(--orange);
+  padding-left: 20px;
+}
+
+.content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: var(--cobalt);
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.content ul {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.content li {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: var(--orange);
+  border: 1px solid var(--black);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  transition: all 0.2s ease;
+}
+
+.backLink:hover {
+  color: var(--orange);
+  transform: translateX(-5px);
+}
+
+.contactBox {
+  margin-top: 60px;
+  padding: 40px;
+  background: var(--white);
+  border: var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.contactBox h3 {
+  margin-top: 0 !important;
+}
+
+.footerNote {
+  margin-top: 80px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  
+  .content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .contactBox {
+    padding: 24px;
+  }
+}

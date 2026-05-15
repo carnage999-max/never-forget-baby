@@ -20,10 +20,10 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Product</h4>
             <div className={styles.links}>
-              <Link href="#features">Features</Link>
-              <Link href="#how-it-works">How It Works</Link>
-              <Link href="#pet-pad">Pet Pad</Link>
-              <Link href="#buy">Buy Now</Link>
+              <Link href="/#features">Features</Link>
+              <Link href="/#how-it-works">How It Works</Link>
+              <Link href="/#pet-pad">Pet Pad</Link>
+              <Link href="/#buy">Buy Now</Link>
             </div>
           </div>
 
@@ -31,10 +31,10 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Company</h4>
             <div className={styles.links}>
-              <Link href="#mission">Our Mission</Link>
-              <Link href="#lives-lost">Lives Lost</Link>
-              <Link href="#congressional">Congressional Action</Link>
-              <Link href="#contact">Contact</Link>
+              <Link href="/#mission">Our Mission</Link>
+              <Link href="/#lives-lost">Lives Lost</Link>
+              <Link href="/#congressional">Congressional Action</Link>
+              <Link href="/#contact">Contact</Link>
             </div>
           </div>
 
@@ -42,10 +42,10 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Support</h4>
             <div className={styles.links}>
-              <Link href="#faq">FAQ</Link>
-              <Link href="#contact">Contact</Link>
-              <Link href="#warranty">Warranty</Link>
-              <Link href="#privacy">Privacy Policy</Link>
+              <Link href="/#faq">FAQ</Link>
+              <Link href="/#contact">Contact</Link>
+              <Link href="/#warranty">Warranty</Link>
+              <Link href="/privacy">Privacy Policy</Link>
             </div>
           </div>
         </div>
