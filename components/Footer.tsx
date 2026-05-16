@@ -45,6 +45,7 @@ export default function Footer() {
               <Link href="/#faq">FAQ</Link>
               <Link href="/#contact">Contact</Link>
               <Link href="/#warranty">Warranty</Link>
+              <Link href="/account-deletion">Account Deletion</Link>
               <Link href="/privacy">Privacy Policy</Link>
             </div>
           </div>

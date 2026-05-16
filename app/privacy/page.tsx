@@ -186,7 +186,7 @@ export default function PrivacyPage() {
             <ul>
               <li>access your personal information;</li>
               <li>update or correct your information;</li>
-              <li>delete your account or certain data;</li>
+              <li>delete your account or certain data (via our <Link href="/account-deletion" style={{ color: 'var(--orange)', textDecoration: 'underline' }}>Account Deletion</Link> page);</li>
               <li>request a copy of your data;</li>
               <li>manage notification permissions;</li>
               <li>disable location permissions, understanding that this may impair emergency features.</li>
