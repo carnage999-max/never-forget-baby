@@ -9,12 +9,34 @@ export default function Contact() {
   const { ref, isInView } = useInView({ threshold: 0.1 });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Simulate API call
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 400);
+    
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      type: 'contact',
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      inquiry: formData.get('inquiry'),
+      message: formData.get('message'),
+    };
+
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+    }
   };
 
   return (
@@ -60,23 +82,23 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className={styles.form}>
                   <div className={styles.inputGroup}>
                     <label htmlFor="name">Full Name</label>
-                    <input type="text" id="name" required placeholder="John Doe" />
+                    <input type="text" id="name" name="name" required placeholder="John Doe" />
                   </div>
                   
                   <div className={styles.row}>
                     <div className={styles.inputGroup}>
                       <label htmlFor="email">Email</label>
-                      <input type="email" id="email" required placeholder="john@example.com" />
+                      <input type="email" id="email" name="email" required placeholder="john@example.com" />
                     </div>
                     <div className={styles.inputGroup}>
                       <label htmlFor="phone">Phone (Optional)</label>
-                      <input type="tel" id="phone" placeholder="555-0199" />
+                      <input type="tel" id="phone" name="phone" placeholder="555-0199" />
                     </div>
                   </div>
                   
                   <div className={styles.inputGroup}>
                     <label htmlFor="inquiry">Inquiry Type</label>
-                    <select id="inquiry" required>
+                    <select id="inquiry" name="inquiry" required>
                       <option value="">Select an option...</option>
                       <option value="general">General Question</option>
                       <option value="support">Order Support</option>
@@ -89,7 +111,7 @@ export default function Contact() {
                   
                   <div className={styles.inputGroup}>
                     <label htmlFor="message">Message</label>
-                    <textarea id="message" rows={5} required placeholder="How can we help?"></textarea>
+                    <textarea id="message" name="message" rows={5} required placeholder="How can we help?"></textarea>
                   </div>
                   
                   <button type="submit" className={`${styles.submitBtn} btn`}>SEND MESSAGE</button>

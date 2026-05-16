@@ -10,15 +10,36 @@ export default function AccountDeletionPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate API call
-    setTimeout(() => {
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      type: 'deletion',
+      email: formData.get('email'),
+      reason: formData.get('reason'),
+      message: formData.get('message'),
+      confirm: formData.get('confirm') === 'on',
+    };
+
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error('Failed to submit deletion request');
+      }
+    } catch (error) {
+      console.error('Error submitting deletion request:', error);
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+    }
   };
 
   return (
@@ -91,6 +112,7 @@ export default function AccountDeletionPage() {
                       <input 
                         type="email" 
                         id="email" 
+                        name="email"
                         required 
                         placeholder="your-email@example.com" 
                       />
@@ -98,7 +120,7 @@ export default function AccountDeletionPage() {
 
                     <div className={styles.inputGroup}>
                       <label htmlFor="reason">Reason for leaving (Optional)</label>
-                      <select id="reason">
+                      <select id="reason" name="reason">
                         <option value="">Select a reason...</option>
                         <option value="no-longer-needed">No longer need the service</option>
                         <option value="privacy">Privacy concerns</option>
@@ -112,13 +134,14 @@ export default function AccountDeletionPage() {
                       <label htmlFor="message">Additional Comments</label>
                       <textarea 
                         id="message" 
+                        name="message"
                         rows={4} 
                         placeholder="Anything else you'd like us to know?"
                       ></textarea>
                     </div>
 
                     <div className={styles.checkboxGroup}>
-                      <input type="checkbox" id="confirm" required />
+                      <input type="checkbox" id="confirm" name="confirm" required />
                       <label htmlFor="confirm">
                         I understand that this action is permanent and all my data, including safety logs and emergency contacts, will be permanently deleted.
                       </label>
