@@ -26,6 +26,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
+  manifest: "/manifest.webmanifest",
   title: 'NeverForgetBaby™ | Never Leave Your Child in a Hot Car',
   description: 'NeverForgetBaby™ is the only system that alerts you — and calls 911 — if your child or pet is left in a hot car. Pressure pad sensor, real-time GPS, automatic emergency dispatch.',
   keywords: 'child car safety, hot car deaths, heatstroke prevention, baby car seat alarm, pet car safety',
@@ -33,7 +34,15 @@ export const metadata: Metadata = {
     title: 'NeverForgetBaby™ | Saving Lives Through Technology',
     description: 'Never forget your child or pet in a hot car again.',
     type: 'website',
-  }
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.ico"],
+  },
 };
 
 export default function RootLayout({
