@@ -52,7 +52,7 @@ export default function Navbar() {
           <Link href="/#faq" className={styles.link} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
           <Link href="/#contact" className={styles.link} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
           <Link href="/#buy" className={`${styles.btnBuy} btn`} onClick={() => setMobileMenuOpen(false)}>
-            Buy Now
+            Join Launch List
           </Link>
         </div>
       </div>

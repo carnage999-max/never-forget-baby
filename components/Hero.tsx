@@ -1,19 +1,11 @@
 "use client";
 
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Weight, Bell, MapPin, Shield } from 'lucide-react';
 import styles from './Hero.module.css';
 import HeroScene from './HeroScene';
 
 export default function Hero() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <section id="home" className={styles.hero}>
       {/* Background layer */}
@@ -25,31 +17,31 @@ export default function Hero() {
         <div className={styles.leftCol}>
 
           
-          <h1 className={`${styles.headline} ${mounted ? styles.animateUp : ''}`} style={{ transitionDelay: '200ms' }}>
+          <h1 className={`${styles.headline} ${styles.animateUp}`} style={{ transitionDelay: '200ms' }}>
             NEVER<br/>FORGET<span className={styles.tm}>™</span>
           </h1>
           
-          <p className={`${styles.subhead} ${mounted ? styles.animateUp : ''}`} style={{ transitionDelay: '300ms' }}>
-            The only system that alerts you — and calls 911 — if your child is left in a hot car.
+          <p className={`${styles.subhead} ${styles.animateUp}`} style={{ transitionDelay: '300ms' }}>
+            A connected safety system designed to alert caregivers if a child may have been left behind in a vehicle.
           </p>
           
-          <div className={`${styles.ctaRow} ${mounted ? styles.animateUp : ''}`} style={{ transitionDelay: '400ms' }}>
+          <div className={`${styles.ctaRow} ${styles.animateUp}`} style={{ transitionDelay: '400ms' }}>
             <Link href="#buy" className={`${styles.btnPrimary} btn`}>
-              ORDER NOW
+              JOIN LAUNCH LIST
             </Link>
             <Link href="#how-it-works" className={`${styles.btnSecondary} btn`}>
               LEARN HOW IT WORKS ↓
             </Link>
           </div>
           
-          <div className={`${styles.trustBar} ${mounted ? styles.animateUp : ''}`} style={{ transitionDelay: '500ms' }}>
-            <span className={styles.trustItem}><span className={styles.check}>✓</span> Automatic 911 Dispatch</span>
-            <span className={styles.trustItem}><span className={styles.check}>✓</span> Real-Time GPS</span>
+          <div className={`${styles.trustBar} ${styles.animateUp}`} style={{ transitionDelay: '500ms' }}>
+            <span className={styles.trustItem}><span className={styles.check}>✓</span> Emergency Escalation</span>
+            <span className={styles.trustItem}><span className={styles.check}>✓</span> Location-Aware Alerts</span>
             <span className={styles.trustItem}><span className={styles.check}>✓</span> Works With Any Car Seat</span>
           </div>
         </div>
 
-        <div className={`${styles.rightCol} ${mounted ? styles.animateUp : ''}`} style={{ transitionDelay: '600ms' }}>
+        <div className={`${styles.rightCol} ${styles.animateUp}`} style={{ transitionDelay: '600ms' }}>
           <div className={styles.logoWrapper}>
             <Image 
               src="/images/logo.png" 

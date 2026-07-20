@@ -47,7 +47,7 @@ export default function Contact() {
           {/* Left Column */}
           <div className={`${styles.leftCol} is-visible-target ${isInView ? 'is-visible' : ''}`}>
             <div className={styles.label}>GET IN TOUCH</div>
-            <h2 className={styles.title}>We're Here To Help.</h2>
+            <h2 className={styles.title}>We Are Here To Help.</h2>
             
             <p className={styles.body}>
               Our customer support team is here to help. Reach out with any questions, bulk order inquiries, or press requests.
@@ -76,7 +76,7 @@ export default function Contact() {
                 <div className={styles.successMsg}>
                   <div className={styles.successIcon}>✓</div>
                   <h3 className={styles.successTitle}>Message sent!</h3>
-                  <p>We'll get back to you within 24 hours.</p>
+                  <p>We will get back to you within 24 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className={styles.form}>

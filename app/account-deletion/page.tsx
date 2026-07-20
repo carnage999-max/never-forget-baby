@@ -54,7 +54,7 @@ export default function AccountDeletionPage() {
           <header className={styles.header}>
             <h1 className={styles.title}>Account & Data Deletion</h1>
             <p className={styles.subtitle}>
-              We're sorry to see you go. Use this form to request the permanent deletion of your NeverForgetBaby™ account and all associated data.
+              We are sorry to see you go. Use this form to request the permanent deletion of your NeverForgetBaby™ account and all associated data.
             </p>
           </header>
 

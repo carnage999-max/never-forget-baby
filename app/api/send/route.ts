@@ -1,7 +1,15 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+let resend: Resend | null = null;
+
+function getResend() {
+  if (!resend) {
+    resend = new Resend(process.env.RESEND_API_KEY);
+  }
+
+  return resend;
+}
 
 export async function POST(request: Request) {
   try {
@@ -44,7 +52,7 @@ export async function POST(request: Request) {
       `;
     }
 
-    const data = await resend.emails.send({
+    const data = await getResend().emails.send({
       from: 'NeverForgetBaby <info@se7eninc.com>',
       to: [process.env.CONTACT_EMAIL || 'support@neverforgetbaby.com'],
       subject: subject,

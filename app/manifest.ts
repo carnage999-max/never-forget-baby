@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "NeverForgetBaby™",
     short_name: "NeverForgetBaby™",
     description:
-      "NeverForgetBaby™ is the only system that alerts you — and calls 911 — if your child or pet is left in a hot car. Pressure pad sensor, real-time GPS, automatic emergency dispatch.",
+      "NeverForgetBaby™ is a connected child and pet vehicle safety system designed to alert caregivers and escalate notifications when someone may have been left behind.",
     start_url: "/",
     display: "standalone",
     background_color: "#0a0a0a",

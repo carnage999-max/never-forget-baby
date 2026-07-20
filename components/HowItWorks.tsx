@@ -52,7 +52,7 @@ export default function HowItWorks() {
             <AlertTriangle size={40} className={styles.icon} />
             <h3 className={styles.stepTitle}>Second Warning if No Response</h3>
             <p className={styles.stepBody}>
-              If you don't acknowledge the first alert within 2 minutes, the system escalates with louder alarms and repeated notifications.
+              If you do not acknowledge the first alert within 2 minutes, the system escalates with louder alarms and repeated notifications.
             </p>
             <div className={styles.imageWrap}>
               <Image src="/images/i-think-you-forgot-your-baby-in-the-car-alert.png" alt="Second warning alert" width={400} height={400} className={styles.stepImg} />
@@ -64,9 +64,9 @@ export default function HowItWorks() {
           <div className={`${styles.stepCard} is-visible-target delay-400 ${isInView ? 'is-visible' : ''}`}>
             <span className={styles.stepNum}>4</span>
             <Siren size={40} className={styles.icon} />
-            <h3 className={styles.stepTitle}>Police Notified with Live GPS</h3>
+            <h3 className={styles.stepTitle}>Emergency Escalation Begins</h3>
             <p className={styles.stepBody}>
-              After 5 minutes with no response, emergency services are automatically contacted with your exact GPS coordinates.
+              If alerts are not acknowledged, the system is designed to escalate to configured emergency contacts and supported response services.
             </p>
             <div className={styles.imageWrap}>
               <Image src="/images/emergency-dispatch-alert-received-officer-taking-call.png" alt="Emergency dispatch" width={400} height={400} className={styles.stepImg} />
@@ -87,7 +87,7 @@ export default function HowItWorks() {
             </div>
             <div className={styles.milestone}>
               <div className={styles.badge}>5+ MIN</div>
-              <div className={styles.milestoneText}>Emergency services contacted with GPS location</div>
+              <div className={styles.milestoneText}>Emergency escalation begins where supported</div>
             </div>
           </div>
         </div>

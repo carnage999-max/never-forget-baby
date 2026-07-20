@@ -12,7 +12,7 @@ export default function Features() {
       <div className={styles.container}>
         <div className={`is-visible-target ${isInView ? 'is-visible' : ''}`}>
           <div className={styles.label}>THE COMPLETE SYSTEM</div>
-          <h2 className={styles.title}>Everything You Need. Nothing You Don't.</h2>
+          <h2 className={styles.title}>Everything You Need. Nothing Extra.</h2>
         </div>
 
         <div className={styles.grid}>
@@ -20,12 +20,12 @@ export default function Features() {
           <div className={`${styles.card} is-visible-target delay-100 ${isInView ? 'is-visible' : ''}`}>
             <Weight size={48} className={styles.icon} />
             <h3 className={styles.cardTitle}>Pressure Pad Sensor</h3>
-            <p className={styles.cardBody}>Advanced weight detection technology that automatically activates when a child or pet is placed in the seat.</p>
+            <p className={styles.cardBody}>Weight detection technology designed to recognize when a child or pet may be present in the seat.</p>
             <ul className={styles.list}>
               <li><span className={styles.check}>✓</span> Ultra-sensitive pressure detection</li>
               <li><span className={styles.check}>✓</span> Anti-slip material</li>
               <li><span className={styles.check}>✓</span> Works with any car seat</li>
-              <li><span className={styles.check}>✓</span> 72-hour battery backup included</li>
+              <li><span className={styles.check}>✓</span> Extended battery design</li>
             </ul>
           </div>
 
@@ -33,10 +33,10 @@ export default function Features() {
           <div className={`${styles.card} is-visible-target delay-200 ${isInView ? 'is-visible' : ''}`}>
             <BellRing size={48} className={styles.icon} />
             <h3 className={styles.cardTitle}>Mobile App Alerts</h3>
-            <p className={styles.cardBody}>Instant notifications to your smartphone when the system detects occupancy and you've left the vehicle.</p>
+            <p className={styles.cardBody}>Instant notifications to your smartphone when the system detects occupancy and you have left the vehicle.</p>
             <ul className={styles.list}>
               <li><span className={styles.check}>✓</span> Multi-level alert system</li>
-              <li><span className={styles.check}>✓</span> Bluetooth & cellular connectivity</li>
+              <li><span className={styles.check}>✓</span> Connected-device support</li>
               <li><span className={styles.check}>✓</span> Customizable notification settings</li>
               <li><span className={styles.check}>✓</span> iOS & Android</li>
             </ul>
@@ -45,26 +45,26 @@ export default function Features() {
           {/* Card 3 */}
           <div className={`${styles.card} is-visible-target delay-300 ${isInView ? 'is-visible' : ''}`}>
             <MapPin size={48} className={styles.icon} />
-            <h3 className={styles.cardTitle}>GPS Tracking</h3>
-            <p className={styles.cardBody}>Real-time location tracking ensures emergency services can find your vehicle immediately.</p>
+            <h3 className={styles.cardTitle}>Location-Aware Alerts</h3>
+            <p className={styles.cardBody}>Location information is designed to support alert escalation when enabled and available.</p>
             <ul className={styles.list}>
-              <li><span className={styles.check}>✓</span> Precise GPS coordinates</li>
-              <li><span className={styles.check}>✓</span> Real-time location updates</li>
-              <li><span className={styles.check}>✓</span> Automatic sharing with authorities</li>
-              <li><span className={styles.check}>✓</span> Full location history</li>
+              <li><span className={styles.check}>✓</span> Location support where enabled</li>
+              <li><span className={styles.check}>✓</span> Incident context for caregivers</li>
+              <li><span className={styles.check}>✓</span> Emergency-contact sharing options</li>
+              <li><span className={styles.check}>✓</span> Privacy controls in development</li>
             </ul>
           </div>
 
           {/* Card 4 */}
           <div className={`${styles.card} is-visible-target delay-400 ${isInView ? 'is-visible' : ''}`}>
             <ShieldAlert size={48} className={styles.icon} />
-            <h3 className={styles.cardTitle}>Emergency Auto-Dispatch</h3>
-            <p className={styles.cardBody}>If you don't respond to alerts, the system automatically contacts emergency services with your vehicle's location.</p>
+            <h3 className={styles.cardTitle}>Emergency Escalation</h3>
+            <p className={styles.cardBody}>If alerts are not acknowledged, the system is designed to escalate according to your configured safety settings.</p>
             <ul className={styles.list}>
-              <li><span className={styles.check}>✓</span> Automatic 911 notification</li>
-              <li><span className={styles.check}>✓</span> GPS coordinates transmitted</li>
-              <li><span className={styles.check}>✓</span> Two-way communication</li>
-              <li><span className={styles.check}>✓</span> Police priority dispatch</li>
+              <li><span className={styles.check}>✓</span> Designated emergency contacts</li>
+              <li><span className={styles.check}>✓</span> Escalating notification workflow</li>
+              <li><span className={styles.check}>✓</span> Supported response procedures</li>
+              <li><span className={styles.check}>✓</span> Configurable safety settings</li>
             </ul>
           </div>
         </div>
@@ -75,18 +75,18 @@ export default function Features() {
           <div className={styles.specCol}>
             <h4 className={styles.specTitle}>Connectivity</h4>
             <ul>
-              <li>Bluetooth 5.0</li>
-              <li>Cellular Network</li>
-              <li>5G + SAT</li>
-              <li>GPS + GLONASS</li>
-              <li>Wi-Fi 802.11 b/g/n</li>
+              <li>Bluetooth pairing</li>
+              <li>Mobile app alerts</li>
+              <li>Location support</li>
+              <li>Multi-device pairing</li>
+              <li>Final specs before launch</li>
             </ul>
           </div>
           
           <div className={styles.specCol}>
             <h4 className={styles.specTitle}>Power</h4>
             <ul>
-              <li>72-hour battery backup</li>
+              <li>Extended battery design</li>
               <li>USB-C charging</li>
               <li>Low battery alerts</li>
               <li>Auto power management</li>
@@ -97,7 +97,7 @@ export default function Features() {
             <h4 className={styles.specTitle}>Compatibility</h4>
             <ul>
               <li>All car seats</li>
-              <li>iOS 13+ / Android 8+</li>
+              <li>iOS and Android planned</li>
               <li>Universal vehicle fit</li>
               <li>Multi-device pairing</li>
             </ul>

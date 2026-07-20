@@ -28,11 +28,11 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   title: 'NeverForgetBaby™ | Never Leave Your Child in a Hot Car',
-  description: 'NeverForgetBaby™ is the only system that alerts you — and calls 911 — if your child or pet is left in a hot car. Pressure pad sensor, real-time GPS, automatic emergency dispatch.',
+  description: 'NeverForgetBaby™ is a connected child and pet vehicle safety system designed to alert caregivers and escalate notifications when someone may have been left behind.',
   keywords: 'child car safety, hot car deaths, heatstroke prevention, baby car seat alarm, pet car safety',
   openGraph: {
     title: 'NeverForgetBaby™ | Saving Lives Through Technology',
-    description: 'Never forget your child or pet in a hot car again.',
+    description: 'Connected vehicle safety alerts for families and caregivers.',
     type: 'website',
   },
   icons: {

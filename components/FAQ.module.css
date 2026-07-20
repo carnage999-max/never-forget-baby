@@ -24,7 +24,16 @@
   font-size: clamp(48px, 7vw, 88px);
   line-height: 0.9;
   color: var(--navy);
-  margin-bottom: 64px;
+  margin-bottom: 24px;
+}
+
+.intro {
+  max-width: 780px;
+  margin: 0 0 64px 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
 }
 
 .layout {
@@ -57,12 +66,17 @@
 }
 
 .questionRow {
+  width: 100%;
   padding: 20px 24px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 0.2s ease;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  appearance: none;
 }
 
 .question {
@@ -98,7 +112,7 @@
 }
 
 .answerOpen {
-  max-height: 500px;
+  max-height: 640px;
 }
 
 .answer {
@@ -114,5 +128,9 @@
   .layout {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .intro {
+    margin-bottom: 40px;
   }
 }

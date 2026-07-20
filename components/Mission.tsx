@@ -31,15 +31,15 @@ export default function Mission() {
             <div className={styles.letterBody}>
               <p>My name is Nathan Reardon, and I created NeverForgetBaby™ after hearing one too many tragic stories of children dying in hot cars.</p>
               
-              <p>As a father myself, these stories haunted me. What struck me most was that these weren't always negligent parents — they were loving, caring individuals who simply had a momentary lapse in an otherwise normal day. A change in routine. A stressful morning. A sleeping child in the backseat.</p>
+              <p>As a father myself, these stories haunted me. What struck me most was that these were not always negligent parents — they were loving, caring individuals who simply had a momentary lapse in an otherwise normal day. A change in routine. A stressful morning. A sleeping child in the backseat.</p>
               
               <p>I realized that we live in an age where our phones can detect our face, our cars can drive themselves, and we can video call someone on the other side of the world — yet we had no reliable system to prevent these preventable deaths.</p>
               
-              <p>That's when I assembled a team of engineers, child safety experts, and emergency response professionals to create NeverForgetBaby™. Our goal was simple: create a foolproof system that would alert parents before tragedy strikes, and automatically summon help if they can't respond.</p>
+              <p>That is when I assembled a team of engineers, child safety experts, and emergency response professionals to create NeverForgetBaby™. Our goal was simple: build a dependable system that alerts caregivers before tragedy strikes and escalates to additional help if they cannot respond.</p>
               
-              <p>We spent three years developing and testing the technology, working with emergency services to ensure seamless integration, and tested with families in real-world conditions.</p>
+              <p>We have spent years developing and testing the technology, learning from emergency response workflows, and refining the product for real-world family use.</p>
               
-              <p>NeverForgetBaby™ is more than a product — it's a mission to save lives.</p>
+              <p>NeverForgetBaby™ is more than a product — it is a mission to save lives.</p>
             </div>
             
             <div className={styles.signature}>
@@ -82,7 +82,7 @@ export default function Mission() {
             <div className={styles.valueCard}>
               <Scale className={styles.valueIcon} size={32} />
               <h4 className={styles.valueTitle}>Advocacy</h4>
-              <p className={styles.valueDesc}>We're committed to making this life-saving technology mandatory in all vehicles.</p>
+              <p className={styles.valueDesc}>We are committed to making this life-saving technology mandatory in all vehicles.</p>
             </div>
           </div>
         </div>

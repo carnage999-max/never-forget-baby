@@ -68,7 +68,7 @@ export default function PetPad() {
                 <Bell className={styles.featureIcon} size={28} />
                 <div className={styles.featureTextWrap}>
                   <h4 className={styles.featureTitle}>Same Alert System</h4>
-                  <p className={styles.featureDesc}>Uses the same proven notification and emergency dispatch system</p>
+                  <p className={styles.featureDesc}>Uses the same planned notification and emergency escalation workflow</p>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function PetPad() {
             <span className={styles.stepNum}>4</span>
             <div className={styles.stepWrap}>
               <h4 className={styles.stepTitle}>Emergency Response</h4>
-              <p className={styles.stepDesc}>If you don't respond, emergency services are contacted automatically with your vehicle's GPS location.</p>
+              <p className={styles.stepDesc}>If you do not respond, the system is designed to escalate according to your configured emergency settings.</p>
             </div>
           </div>
         </div>

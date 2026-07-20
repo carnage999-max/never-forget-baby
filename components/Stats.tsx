@@ -118,7 +118,7 @@ export default function Stats() {
           <div className={styles.timelineRow}>
             <div className={styles.timeCard}>
               <div className={styles.timeLabel}>10 MIN</div>
-              <div className={styles.timeDesc}>On a 90°F day, a car's interior can reach 110°F</div>
+              <div className={styles.timeDesc}>On a 90°F day, a car interior can reach 110°F</div>
             </div>
             <div className={styles.timeCard}>
               <div className={styles.timeLabel}>20 MIN</div>
@@ -130,7 +130,7 @@ export default function Stats() {
             </div>
           </div>
           <div className={styles.warningBanner}>
-            Even "mild" days are dangerous. Heatstroke deaths have occurred on days as cool as 60°F. Children's bodies heat up 3–5× faster than adults.
+            Even mild days are dangerous. Heatstroke deaths have occurred on days as cool as 60°F. Children&apos;s bodies heat up 3–5× faster than adults.
           </div>
         </div>
       </div>

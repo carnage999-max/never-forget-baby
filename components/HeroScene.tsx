@@ -1,9 +1,31 @@
 "use client";
 
-import { useRef, useMemo } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import * as THREE from 'three';
+
+function createParticlePositions() {
+  let seed = 12345;
+  const random = () => {
+    seed = (seed * 1664525 + 1013904223) >>> 0;
+    return seed / 4294967296;
+  };
+
+  const coords = new Float32Array(1500 * 3);
+  for (let i = 0; i < coords.length; i += 3) {
+    const radius = 4 * random() + 1;
+    const theta = 2 * Math.PI * random();
+    const phi = Math.acos(2 * random() - 1);
+    coords[i] = radius * Math.sin(phi) * Math.cos(theta);
+    coords[i + 1] = radius * Math.sin(phi) * Math.sin(theta);
+    coords[i + 2] = radius * Math.cos(phi);
+  }
+
+  return coords;
+}
+
+const particlePositions = createParticlePositions();
 
 function TechGlobe() {
   const meshRef = useRef<THREE.Mesh>(null);
@@ -29,20 +51,7 @@ function TechGlobe() {
 }
 
 function FloatingParticles() {
-  const ref = useRef<any>(null);
-  
-  const points = useMemo(() => {
-    const coords = new Float32Array(1500 * 3);
-    for (let i = 0; i < coords.length; i += 3) {
-      const radius = 4 * Math.random() + 1; // avoid center
-      const theta = 2 * Math.PI * Math.random();
-      const phi = Math.acos(2 * Math.random() - 1);
-      coords[i] = radius * Math.sin(phi) * Math.cos(theta);
-      coords[i+1] = radius * Math.sin(phi) * Math.sin(theta);
-      coords[i+2] = radius * Math.cos(phi);
-    }
-    return coords;
-  }, []);
+  const ref = useRef<THREE.Points>(null);
 
   useFrame((state, delta) => {
     if (ref.current) {
@@ -55,7 +64,7 @@ function FloatingParticles() {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={points} stride={3} frustumCulled={false}>
+      <Points ref={ref} positions={particlePositions} stride={3} frustumCulled={false}>
         <PointMaterial
           transparent
           color="#F8B133"

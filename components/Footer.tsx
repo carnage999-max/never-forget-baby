@@ -23,7 +23,7 @@ export default function Footer() {
               <Link href="/#features">Features</Link>
               <Link href="/#how-it-works">How It Works</Link>
               <Link href="/#pet-pad">Pet Pad</Link>
-              <Link href="/#buy">Buy Now</Link>
+              <Link href="/#buy">Launch Options</Link>
             </div>
           </div>
 

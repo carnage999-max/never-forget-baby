@@ -23,8 +23,8 @@ export default function Congressional() {
             <ul className={styles.list}>
               <li><span className={styles.bullet}></span> Mandatory pressure-sensitive detection systems in rear passenger seats</li>
               <li><span className={styles.bullet}></span> Automatic alerts to caregivers via smartphone or vehicle systems</li>
-              <li><span className={styles.bullet}></span> Integration with emergency services for automatic dispatch</li>
-              <li><span className={styles.bullet}></span> GPS tracking capabilities for emergency response</li>
+              <li><span className={styles.bullet}></span> Emergency escalation capabilities where supported</li>
+              <li><span className={styles.bullet}></span> Location-aware incident context for emergency response</li>
               <li><span className={styles.bullet}></span> Retrofit programs for older vehicles</li>
             </ul>
 
