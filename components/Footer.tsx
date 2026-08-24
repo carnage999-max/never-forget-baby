@@ -55,6 +55,18 @@ export default function Footer() {
           <div className={styles.copyright}>© 2026 NeverForgetBaby™. All rights reserved.</div>
           <div className={styles.madeWith}>Made with purpose. Every life matters.</div>
         </div>
+        <div className={styles.copyright} style={{ textAlign: 'center', marginTop: '12px' }}>
+          Part of the{" "}
+          <a
+            href="https://se7eninc.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'inherit', textDecoration: 'underline' }}
+          >
+            Se7en
+          </a>{" "}
+          family of companies.
+        </div>
       </div>
     </footer>
   );
