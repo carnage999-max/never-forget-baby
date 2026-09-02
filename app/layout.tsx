@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Bebas_Neue, DM_Serif_Display, Syne, Space_Mono } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const bebasNeue = Bebas_Neue({
@@ -54,6 +55,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bebasNeue.variable} ${dmSerifDisplay.variable} ${syne.variable} ${spaceMono.variable}`}>
         {children}
+        <Script
+          src="https://now-hiring-eta.vercel.app/widget.js"
+          data-icon="Baby"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
