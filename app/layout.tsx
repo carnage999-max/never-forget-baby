@@ -56,7 +56,7 @@ export default function RootLayout({
       <body className={`${bebasNeue.variable} ${dmSerifDisplay.variable} ${syne.variable} ${spaceMono.variable}`}>
         {children}
         <Script
-          src="https://now-hiring-eta.vercel.app/widget.js"
+          src="https://hiring.se7eninc.com/widget.js"
           data-icon="Baby"
           strategy="afterInteractive"
         />
